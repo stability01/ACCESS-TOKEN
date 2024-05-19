@@ -36,7 +36,7 @@ app.get('/api', (req, res) => {
     if (responseJson.access_token) {
       return res.send({ access_token: responseJson.access_token });
     } else {
-      return res.send({ message: "Wrong Credentials" });
+      return res.send({ message: "Check your email/uid/num and pass." });
     }
   });
 
